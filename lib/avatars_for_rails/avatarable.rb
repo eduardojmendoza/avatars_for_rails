@@ -11,8 +11,7 @@ module AvatarsForRails
 
       has_attached_file :logo, avatarable_options
 
-      before_validation :validate_crop_params, :crop_avatar,
-                        :check_avatar_aspect_ratio
+      # before_validation :validate_crop_params, :crop_avatar,:check_avatar_aspect_ratio
     end
 
     def avatar_tmp_public_path(root_path)
